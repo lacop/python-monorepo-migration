@@ -2,7 +2,7 @@ import tqdm
 import requests
 import fastadd
 
-import libs.common.util as util
+import common.util as util
 
 print(fastadd.add(1, 2))
 print(util.add(3, 4))

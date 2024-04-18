@@ -3,14 +3,15 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "common"
+name = "someservice"
 version = "0.1.0"
 authors = []
 description = ""
-packages = [{include = "common"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 
-tqdm = "^4.1.0"
-fastadd = {path = "../fastadd", develop = true}
+tqdm = "^4.66.2"
+requests = "^2.31.0"
+common = {path = "../../libs/common", develop = true}
+fastadd = {path = "../../libs/fastadd", develop = true}
