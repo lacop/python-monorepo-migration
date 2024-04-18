@@ -11,7 +11,7 @@ description = ""
 [tool.poetry.dependencies]
 python = "^3.9"
 
-tqdm = "^4.66.2"
+tqdm = "==4.10.0"
 requests = "^2.31.0"
 common = {path = "../../libs/common", develop = true}
 fastadd = {path = "../../libs/fastadd", develop = true}
