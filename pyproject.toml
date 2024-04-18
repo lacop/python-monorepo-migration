@@ -4,8 +4,13 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 package-mode = false
-#packages = []
 
 [tool.poetry.dependencies]
 python = "^3.9"
 
+# Temporary deps until we move them out of here into libraries/services.
+# This mirrors requirements.txt
+tqdm = "^4.66.2"
+requests = "^2.31.0"
+
+fastadd = {path = "libs/fastadd", develop = true}
